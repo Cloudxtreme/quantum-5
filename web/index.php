@@ -1,12 +1,12 @@
 <?php
-// Futasido inditasa.
+// Start-up time.
 define('SCRIPT_START', microtime(true));
 
-// Alapertelemezett include mappas.
+// Default include folder.
 set_include_path(dirname(__DIR__));
 
-// Session inditasa.
+// Session start.
 session_start();
 
-// Bootolas.
+// Booting.
 include('../includes/bootstrap.php');
