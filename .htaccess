@@ -1,0 +1,10 @@
+RewriteEngine On
+<IfModule mod_rewrite.c>
+	RewriteCond %{http_host} ^domain.com
+	RewriteRule ^(.*) http://www.doamin.com/$1 [R=301,L]
+
+	# Rewrite URLs of the form 'index.html?q=x':
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ index.php [QSA]
+</IfModule>
