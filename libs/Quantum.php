@@ -1,9 +1,9 @@
 <?php
 /**
- * Quantum gyujto.
+ * Quantum core.
  *
  * @package Quantum
- * @author klausz.gabor
+ * @author Gabor Klausz
  */
 
 /**
