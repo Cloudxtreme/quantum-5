@@ -672,7 +672,8 @@ class Template
 	 *
 	 * @return void
 	 */
-	public function includeBlock($blockName) {
+	public function includeBlock($blockName)
+	{
 		ob_start();
 
 		include('View/block/' . $this->path . $blockName . '.php');
@@ -690,7 +691,8 @@ class Template
 	 *
 	 * @return void
 	 */
-	public function setHeaderJavascript($file, $package = '') {
+	public function setHeaderJavascript($file, $package = '')
+	{
 		$this->headerJavascripts[] = '/static/js/' . (!empty($package) ? $package . '/' : $this->path) . $file . '.js';
 	}
 
@@ -702,7 +704,8 @@ class Template
 	 *
 	 * @return void
 	 */
-	public function setFooterJavascript($file, $package = '') {
+	public function setFooterJavascript($file, $package = '')
+	{
 		$this->footerJavascripts[] = '/static/js/' . (!empty($package) ? $package . '/' : $this->path) . $file . '.js';
 	}
 
@@ -711,7 +714,8 @@ class Template
 	 *
 	 * @return void
 	 */
-	public function getHeaderJavascripts() {
+	public function getHeaderJavascripts()
+	{
 		return $this->headerJavascripts;
 	}
 
@@ -720,7 +724,8 @@ class Template
 	 *
 	 * @return void
 	 */
-	public function getFooterJavascripts() {
+	public function getFooterJavascripts()
+	{
 		return $this->footerJavascripts;
 	}
 
@@ -732,7 +737,8 @@ class Template
 	 *
 	 * @return void
 	 */
-	public function setHeaderCss($file, $package = '') {
+	public function setHeaderCss($file, $package = '')
+	{
 		$this->headerCss[] = '/static/css/' . (!empty($package) ? $package . '/' : $this->path) . $file . '.css';
 	}
 
@@ -741,7 +747,8 @@ class Template
 	 *
 	 * @return void
 	 */
-	public function getHeaderCss() {
+	public function getHeaderCss()
+	{
 		return $this->headerCss;
 	}
 
@@ -945,14 +952,7 @@ class Config
 	{
 		if (!empty($datas)) {
 			foreach ($datas as $key => $data) {
-				/*if (is_array($data)) {
-					foreach ($data as $k => $d) {
-						self::$configDatas[$key . '.' . $k] = $d;
-					}
-				}
-				else {*/
-					self::$configDatas[$key] = $data;
-				/* }*/
+				self::$configDatas[$key] = $data;
 			}
 		}
 	}
