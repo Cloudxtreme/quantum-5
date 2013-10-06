@@ -1,0 +1,26 @@
+.debug {
+	z-index: 10000;
+	top: 10px;
+	left: 10px;
+	height: 20px;
+	width: 20px;
+	display: block;
+	background: #afafaf;
+	cursor: pointer;
+	position: fixed;
+}
+.debug-text {
+	height: 20px;
+	width: 20px;
+	position: fixed;
+}
+.debug .debug-info {
+	margin-top: 10px;
+	background: #efefef;
+	border: 1px solid #afafaf;
+	display: none;
+	width: 600px;
+	diplay: block;
+	overflow: hidden;
+	padding: 5px;
+}
