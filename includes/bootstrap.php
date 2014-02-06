@@ -26,3 +26,5 @@ function __autoload($class_name) {
 		echo 'Page not found.';
 	}
 }
+
+
